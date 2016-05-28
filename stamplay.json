@@ -1,0 +1,10 @@
+{
+  "appId": "webrocketlabs",
+  "apiKey": "5a24514f11ee039d44c9687ff212eb45da61f6ba006e86be2990452ab2a7c8d0",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
