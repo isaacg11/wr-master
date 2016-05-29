@@ -4,6 +4,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+//smooth scroll
+$(document).ready(function() {
+	$('a[rel="relativeanchor"]').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 1000);
+	    return false;
+	}); 
+});
+
 (function($) {
 
 	skel
@@ -48,12 +58,12 @@
 			});
 
 		// Dropdowns.
-			$('#nav > ul').dropotron({
-				mode: 'fade',
-				noOpenerFade: true,
-				alignment: 'center',
-				detach: false
-			});
+			// $('#nav > ul').dropotron({
+			// 	mode: 'fade',
+			// 	noOpenerFade: true,
+			// 	alignment: 'center',
+			// 	detach: false
+			// });
 
 		// Off-Canvas Navigation.
 

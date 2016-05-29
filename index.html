@@ -28,19 +28,26 @@
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									<li><a href="left-sidebar.html">About</a></li>
-									<li><a href="right-sidebar.html">What We Do</a></li>
-									<li><a href="no-sidebar.html">Our Work</a></li>
-									<li><a href="no-sidebar.html">Contact Us</a></li>
+									<li>
+										<a href="#about" rel="relativeanchor">About</a>
+									</li>
+									<li>
+										<a href="#services" rel="relativeanchor">What We Do</a>
+									</li>
+									<li>
+										<a href="#work" rel="relativeanchor">Our Work</a>
+									</li>
+									<li>
+										<a href="#contact" rel="relativeanchor">Contact Us</a>
+									</li>
 								</ul>
 							</nav>
-
 					</div>
 				</div>
 
 			<!-- Intro -->
 				<div id="intro-wrapper" class="wrapper style1">
-					<div class="title">About Us</div>
+					<div class="title" id="about">About Us</div>
 					<section id="intro" class="container">
 						<p class="style1">We are a digital agency empowering online businesess to...</p>
 						<p class="style2">
@@ -51,14 +58,20 @@
 						</p>
 						<p class="style3">How? It's simple, we create <u>extrordinary experiences</u> for you and your customers through <b>custom software development </b>and <b>consulting</b>, as well as <b>marketing campaigns</b> and <b>analytics</b>.</p>
 						<ul class="actions">
-							<li><a href="#" class="button style3 big">Contact</a></li>
+							<li>
+								<a 
+									href="#contact" 
+									rel="relativeanchor" 
+									class="button style3 big">Contact
+								</a>
+							</li>
 						</ul>
 					</section>
 				</div>
 
 			<!-- Main -->
 				<div class="wrapper style2">
-					<div class="title">What We Do</div>
+					<div class="title" id="services">What We Do</div>
 					<div id="main" class="container">
 						<!-- Features -->
 							<section id="features">
@@ -122,7 +135,7 @@
 
 			<!-- Highlights -->
 				<div class="wrapper style3">
-					<div class="title">Our Work</div>
+					<div class="title" id="work">Our Work</div>
 					<div id="highlights" class="container">
 						<div class="row 150%">
 							<div class="4u 12u(mobile)">
@@ -131,7 +144,13 @@
 									<h3><a href="#">Food Findr</a></h3>
 									<p>Food Findr is a website that locates and displays food options near you, including reviews, ratings, and custom searches.</p>
 									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+										<li>
+											<a 
+												href="https://food-findr.stamplayapp.com" 
+												target="_blank"
+												class="button style1">View
+											</a>
+										</li>
 									</ul>
 								</section>
 							</div>
@@ -141,7 +160,13 @@
 									<h3><a href="#">Rapid Recipe</a></h3>
 									<p>Rapid Recipe is a website for quickly looking up and viewing yummy food recipes based on recipe type or ingredients!</p>
 									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+										<li>
+											<a 
+												href="http://rapidrecipe.stamplayapp.com"
+												target="_blank" 
+												class="button style1">View
+											</a>
+										</li>
 									</ul>
 								</section>
 							</div>
@@ -149,9 +174,15 @@
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/wb.png" alt="" /></a>
 									<h3><a href="#">Where@bout</a></h3>
-									<p>Where@bout is an online business photo album platform where users can browse business photos/reviews, and add their own.</p>
+									<p>Where@bout is an online business photo album where users can browse business photos/reviews, and add their own.</p>
 									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+										<li>
+											<a 
+												href="http://whereaboutapp.herokuapp.com/#/" 
+												target="_blank"
+												class="button style1">View
+											</a>
+										</li>
 									</ul>
 								</section>
 							</div>
@@ -161,7 +192,7 @@
 
 			<!-- Footer -->
 				<div id="footer-wrapper" class="wrapper">
-					<div class="title">Contact Us</div>
+					<div class="title" id="contact">Contact Us</div>
 					<div id="footer" class="container">
 						<header class="style1">
 							<h2>Have a project you need completed?</h2>
@@ -255,7 +286,7 @@
 					</div>
 					<div id="copyright">
 						<ul>
-							<li>&copy; WEBROCKET LABS LLC</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; WEBROCKET LABS LLC</li><li><a href="#nav" rel="relativeanchor">BACK TO TOP</a></li>
 						</ul>
 					</div>
 				</div>
@@ -263,9 +294,8 @@
 		</div>
 
 		<!-- Scripts -->
-
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<!-- <script src="assets/js/jquery.dropotron.min.js"></script> -->
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
