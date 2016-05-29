@@ -1,8 +1,41 @@
-/*
-	Escape Velocity by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+//send message
+$("form").submit(function(e){
+    e.preventDefault();
+    var user_name = document.getElementById('contact-name').value;
+    var user_email = document.getElementById('contact-email').value;
+    var user_message = document.getElementById('contact-message').value;
+    var details = {
+    	name: user_name,
+    	email: user_email,
+    	text: user_message
+    };
+    Stamplay.Object('message').save(details).then(function(res){
+    	toastr.success('Message Sent!');
+    	document.getElementById('contact-name').value = "";
+    	document.getElementById('contact-email').value = "";
+    	document.getElementById('contact-message').value = "";
+    })
+});
+
+//validate form
+$("#register-form").validate({
+  	rules: {
+        name: "required",
+        email: {
+           	required: true,
+            email: true
+        },
+        messages: {
+            name: "Please enter your firstname",
+            email: "Please enter a valid email address",
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    }
+});
+
 
 //smooth scroll
 $(document).ready(function() {
@@ -14,6 +47,7 @@ $(document).ready(function() {
 	}); 
 });
 
+//responsive settings
 (function($) {
 
 	skel
